@@ -21,6 +21,9 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
   const [isLoading, setIsLoading] = useState(false);
   const { toast } = useToast();
 
+  console.log('WaitlistForm rendering with formData:', formData);
+  console.log('Form variant:', variant);
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsLoading(true);
@@ -40,6 +43,7 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
   };
 
   const handleInputChange = (field: string, value: string) => {
+    console.log(`Updating ${field} to:`, value);
     setFormData(prev => ({ ...prev, [field]: value }));
   };
 
@@ -64,6 +68,8 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
   const buttonClassName = variant === 'light'
     ? 'bg-white text-blue-600 hover:bg-white/90'
     : 'bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white';
+
+  console.log('Rendering form with inputClassName:', inputClassName);
 
   return (
     <form onSubmit={handleSubmit} className="space-y-4 max-w-md mx-auto">
