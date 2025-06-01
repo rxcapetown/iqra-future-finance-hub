@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -61,17 +60,6 @@ const Index = () => {
             </div>
 
             <WaitlistForm />
-
-            <div className="text-center lg:text-left">
-              <p className="text-sm text-slate-500 dark:text-slate-400 mb-3">
-                Backed by operators from MENA & South Asia
-              </p>
-              <div className="flex justify-center lg:justify-start space-x-6 text-xs text-slate-400">
-                <span>Series A • $12M</span>
-                <span>150+ Early Partners</span>
-                <span>23 Countries</span>
-              </div>
-            </div>
           </div>
 
           {/* Hero Visual */}
