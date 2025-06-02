@@ -127,6 +127,190 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Core Services Section */}
+      <section className="py-24 px-6 bg-slate-50 dark:bg-slate-900">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">
+              Core Services
+            </h2>
+            <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
+              Four comprehensive solutions that power the next generation of emerging market businesses
+            </p>
+          </div>
+          
+          <div className="grid lg:grid-cols-2 gap-8">
+            {/* Legal Contract Generator */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-slate-200 dark:border-slate-600">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-blue-500 to-purple-500 flex items-center justify-center flex-shrink-0">
+                      <Code className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                        Legal Contract Generator
+                      </h3>
+                      <p className="text-lg text-blue-600 dark:text-blue-400 font-medium mb-4">
+                        Auto-generate compliant contracts in minutes.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Toggle between Shariah and Common Law clauses
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Built-in clause validation using regulatory-trained AI
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-blue-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Ready-to-sign PDFs with audit trails and jurisdictional flags
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Alt-Credit Scoring Engine */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-slate-200 dark:border-slate-600">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center flex-shrink-0">
+                      <TrendingUp className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                        Alt-Credit Scoring Engine
+                      </h3>
+                      <p className="text-lg text-green-600 dark:text-green-400 font-medium mb-4">
+                        Unlock credit where banks won't go.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Uses telco, utility, and transaction data to create credit profiles
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Designed for thin-file or unbanked SME users
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-green-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        API-accessible scores for lenders, platforms, and trade partners
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* FX Optimization Layer */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-slate-200 dark:border-slate-600">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center flex-shrink-0">
+                      <Globe className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                        FX Optimization Layer
+                      </h3>
+                      <p className="text-lg text-purple-600 dark:text-purple-400 font-medium mb-4">
+                        Smart global payments without the FX chaos.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Routes payments through fiat, stablecoins, or pooled liquidity
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        AI forecasts FX shifts and automates dynamic hedging
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-purple-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Reduces fees and delays for SMEs and marketplaces
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* RegTech Infrastructure APIs */}
+            <Card className="group hover:shadow-xl transition-all duration-300 border-slate-200 dark:border-slate-600">
+              <CardContent className="p-8">
+                <div className="space-y-6">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-12 h-12 rounded-lg bg-gradient-to-r from-orange-500 to-red-500 flex items-center justify-center flex-shrink-0">
+                      <Shield className="w-6 h-6 text-white" />
+                    </div>
+                    <div className="flex-1">
+                      <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
+                        RegTech Infrastructure APIs
+                      </h3>
+                      <p className="text-lg text-orange-600 dark:text-orange-400 font-medium mb-4">
+                        Compliance tools that adapt to your market.
+                      </p>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-3">
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        KYC, AML, VAT, and cross-border tools for startups and banks
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Localized rule engines that auto-update
+                      </p>
+                    </div>
+                    <div className="flex items-start space-x-3">
+                      <div className="w-2 h-2 bg-orange-500 rounded-full mt-2 flex-shrink-0"></div>
+                      <p className="text-slate-600 dark:text-slate-300">
+                        Deployable via low-code dashboards or full API integration
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-24 px-6">
         <div className="max-w-4xl mx-auto text-center">
