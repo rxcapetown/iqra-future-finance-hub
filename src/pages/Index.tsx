@@ -317,14 +317,14 @@ const Index = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
             <h2 className="text-4xl font-bold mb-6">
-              Be the First to Access Iqra Beta
+              Get in Touch
             </h2>
             <p className="text-xl mb-8 opacity-90">
-              Join leading fintechs, legal firms, and SMEs who are already transforming how business gets done in emerging markets.
+              Ready to transform how business gets done in emerging markets? Contact us to learn more about Iqra's solutions.
             </p>
             
             <div className="max-w-md mx-auto">
-              <WaitlistForm variant="light" />
+              <ContactForm />
             </div>
           </div>
         </div>
