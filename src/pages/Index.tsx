@@ -332,34 +332,23 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-slate-200 dark:border-slate-700">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-2 gap-8 items-start">
-            {/* Logo and tagline */}
-            <div className="text-center md:text-left">
-              <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                  <Code className="w-5 h-5 text-white" />
-                </div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-                  Iqra
-                </span>
-              </div>
-              <p className="text-slate-600 dark:text-slate-400 mb-6">
-                Building the infrastructure for the next billion businesses
-              </p>
-              <div className="flex items-center justify-center md:justify-start space-x-2">
-                <MapPin className="w-4 h-4 text-slate-500" />
-                <span className="text-slate-600 dark:text-slate-400">
-                  MENA • South Asia • Africa
-                </span>
-              </div>
+        <div className="max-w-7xl mx-auto text-center">
+          <div className="flex items-center justify-center space-x-3 mb-4">
+            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+              <Code className="w-5 h-5 text-white" />
             </div>
-            
-            {/* Contact Form */}
-            <div>
-              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-6 text-center md:text-left">Contact Us</h3>
-              <ContactForm />
-            </div>
+            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+              Iqra
+            </span>
+          </div>
+          <p className="text-slate-600 dark:text-slate-400 mb-6">
+            Building the infrastructure for the next billion businesses
+          </p>
+          <div className="flex items-center justify-center space-x-2">
+            <MapPin className="w-4 h-4 text-slate-500" />
+            <span className="text-slate-600 dark:text-slate-400">
+              MENA • South Asia • Africa
+            </span>
           </div>
         </div>
       </footer>
