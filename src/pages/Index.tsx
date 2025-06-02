@@ -7,6 +7,7 @@ import { ThemeToggle } from '@/components/ThemeToggle';
 import { WaitlistForm } from '@/components/WaitlistForm';
 import { BenefitTiles } from '@/components/BenefitTiles';
 import { ContactForm } from '@/components/ContactForm';
+import { Toaster } from '@/components/ui/toaster';
 import { Globe, Zap, Shield, TrendingUp, ArrowRight, Code, MapPin } from 'lucide-react';
 
 const Index = () => {
@@ -352,6 +353,8 @@ const Index = () => {
           </div>
         </div>
       </footer>
+      
+      <Toaster />
     </div>
   );
 };
