@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
@@ -6,7 +7,7 @@ import { Badge } from '@/components/ui/badge';
 import { ThemeToggle } from '@/components/ThemeToggle';
 import { WaitlistForm } from '@/components/WaitlistForm';
 import { BenefitTiles } from '@/components/BenefitTiles';
-import { Globe, Zap, Shield, TrendingUp, ArrowRight, Code, CreditCard, Scale } from 'lucide-react';
+import { Globe, Zap, Shield, TrendingUp, ArrowRight, Code, CreditCard, Scale, Mail, MapPin } from 'lucide-react';
 
 const Index = () => {
   return (
@@ -331,18 +332,42 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-slate-200 dark:border-slate-700">
-        <div className="max-w-7xl mx-auto text-center">
-          <div className="flex items-center justify-center space-x-3 mb-4">
-            <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-              <Code className="w-5 h-5 text-white" />
+        <div className="max-w-7xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
+            {/* Logo and tagline */}
+            <div className="text-center md:text-left">
+              <div className="flex items-center justify-center md:justify-start space-x-3 mb-4">
+                <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                  <Code className="w-5 h-5 text-white" />
+                </div>
+                <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
+                  Iqra
+                </span>
+              </div>
+              <p className="text-slate-600 dark:text-slate-400">
+                Building the infrastructure for the next billion businesses
+              </p>
             </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              Iqra
-            </span>
+            
+            {/* Contact Us */}
+            <div className="text-center md:text-right">
+              <h3 className="text-lg font-semibold text-slate-900 dark:text-white mb-4">Contact Us</h3>
+              <div className="space-y-2">
+                <div className="flex items-center justify-center md:justify-end space-x-2">
+                  <Mail className="w-4 h-4 text-slate-500" />
+                  <a href="mailto:hello@iqra.com" className="text-slate-600 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
+                    hello@iqra.com
+                  </a>
+                </div>
+                <div className="flex items-center justify-center md:justify-end space-x-2">
+                  <MapPin className="w-4 h-4 text-slate-500" />
+                  <span className="text-slate-600 dark:text-slate-400">
+                    MENA • South Asia • Africa
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
-          <p className="text-slate-600 dark:text-slate-400">
-            Building the infrastructure for the next billion businesses
-          </p>
         </div>
       </footer>
     </div>
