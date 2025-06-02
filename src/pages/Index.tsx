@@ -314,17 +314,17 @@ const Index = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-24 px-6">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-12 text-white">
-            <h2 className="text-4xl font-bold mb-6">
+      <section className="py-16 px-6">
+        <div className="max-w-3xl mx-auto text-center">
+          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white">
+            <h2 className="text-2xl font-bold mb-3">
               Get in Touch
             </h2>
-            <p className="text-xl mb-8 opacity-90">
-              Ready to transform how business gets done in emerging markets? Contact us to learn more about Iqra's solutions.
+            <p className="text-base mb-6 opacity-90">
+              Ready to transform how business gets done in emerging markets?
             </p>
             
-            <div className="max-w-md mx-auto">
+            <div className="max-w-xs mx-auto">
               <ContactForm />
             </div>
           </div>

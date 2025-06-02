@@ -27,7 +27,7 @@ export function ContactForm() {
     
     toast({
       title: "Message Sent!",
-      description: "Thank you for reaching out. We'll get back to you soon.",
+      description: "We'll get back to you soon.",
     });
     
     // Reset form
@@ -45,9 +45,9 @@ export function ContactForm() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 max-w-md">
-      <div className="space-y-2">
-        <Label htmlFor="name" className="text-white">
+    <form onSubmit={handleSubmit} className="space-y-3 max-w-sm">
+      <div className="space-y-1">
+        <Label htmlFor="name" className="text-white text-sm">
           Name
         </Label>
         <Input
@@ -56,13 +56,13 @@ export function ContactForm() {
           value={formData.name}
           onChange={(e) => handleInputChange('name', e.target.value)}
           required
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-          placeholder="Your full name"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/70 h-8 text-sm"
+          placeholder="Your name"
         />
       </div>
       
-      <div className="space-y-2">
-        <Label htmlFor="email" className="text-white">
+      <div className="space-y-1">
+        <Label htmlFor="email" className="text-white text-sm">
           Email
         </Label>
         <Input
@@ -71,13 +71,13 @@ export function ContactForm() {
           value={formData.email}
           onChange={(e) => handleInputChange('email', e.target.value)}
           required
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/70 h-8 text-sm"
           placeholder="your@email.com"
         />
       </div>
       
-      <div className="space-y-2">
-        <Label htmlFor="message" className="text-white">
+      <div className="space-y-1">
+        <Label htmlFor="message" className="text-white text-sm">
           Message
         </Label>
         <Textarea
@@ -85,23 +85,23 @@ export function ContactForm() {
           value={formData.message}
           onChange={(e) => handleInputChange('message', e.target.value)}
           required
-          rows={3}
-          className="bg-white/10 border-white/20 text-white placeholder:text-white/70"
-          placeholder="Tell us about your needs..."
+          rows={2}
+          className="bg-white/10 border-white/20 text-white placeholder:text-white/70 text-sm resize-none"
+          placeholder="Your message..."
         />
       </div>
       
       <Button
         type="submit"
         disabled={isLoading || !formData.name || !formData.email || !formData.message}
-        className="w-full bg-white text-blue-600 hover:bg-white/90 font-semibold"
+        className="w-full bg-white text-blue-600 hover:bg-white/90 font-medium h-8 text-sm"
       >
         {isLoading ? (
           "Sending..."
         ) : (
           <>
             Send Message
-            <Send className="w-4 h-4 ml-2" />
+            <Send className="w-3 h-3 ml-1" />
           </>
         )}
       </Button>
