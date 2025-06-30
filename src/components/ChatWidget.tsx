@@ -156,7 +156,7 @@ const ChatWidget = () => {
 
       {/* Chat Interface */}
       {isOpen && (
-        <div className="fixed bottom-6 right-6 z-50 w-80 h-96">
+        <div className="fixed bottom-6 right-6 z-50 w-80 h-[460px]">
           <Card className="h-full shadow-2xl flex flex-col">
             <CardHeader className="flex flex-row items-center justify-between py-3 px-4 bg-blue-600 text-white rounded-t-lg flex-shrink-0">
               <CardTitle className="text-lg">Chat Support</CardTitle>
