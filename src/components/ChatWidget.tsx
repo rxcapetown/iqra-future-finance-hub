@@ -142,21 +142,23 @@ const ChatWidget = () => {
   return (
     <>
       {/* Floating Chat Button */}
-      <div className="fixed bottom-6 right-6 z-50">
-        <Button
-          onClick={toggleChat}
-          className="w-14 h-14 rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg"
-          size="icon"
-        >
-          <MessageCircle className="w-6 h-6 text-white" />
-        </Button>
-      </div>
+      {!isOpen && (
+        <div className="fixed bottom-6 right-6 z-50">
+          <Button
+            onClick={toggleChat}
+            className="w-14 h-14 rounded-full bg-blue-600 hover:bg-blue-700 shadow-lg"
+            size="icon"
+          >
+            <MessageCircle className="w-6 h-6 text-white" />
+          </Button>
+        </div>
+      )}
 
       {/* Chat Interface */}
       {isOpen && (
-        <div className="fixed bottom-24 right-6 z-50 w-80 h-96">
-          <Card className="h-full shadow-2xl">
-            <CardHeader className="flex flex-row items-center justify-between py-3 px-4 bg-blue-600 text-white rounded-t-lg">
+        <div className="fixed bottom-6 right-6 z-50 w-80 h-96">
+          <Card className="h-full shadow-2xl flex flex-col">
+            <CardHeader className="flex flex-row items-center justify-between py-3 px-4 bg-blue-600 text-white rounded-t-lg flex-shrink-0">
               <CardTitle className="text-lg">Chat Support</CardTitle>
               <Button
                 onClick={closeChat}
@@ -168,7 +170,7 @@ const ChatWidget = () => {
               </Button>
             </CardHeader>
             
-            <CardContent className="flex flex-col h-full p-0">
+            <CardContent className="flex flex-col flex-1 p-0 overflow-hidden">
               {/* Messages Area */}
               <div className="flex-1 overflow-y-auto p-4 space-y-3">
                 {messages.map((message) => (
@@ -204,7 +206,7 @@ const ChatWidget = () => {
               </div>
 
               {/* Input Area */}
-              <div className="border-t p-4">
+              <div className="border-t p-4 flex-shrink-0">
                 <div className="flex space-x-2">
                   <Input
                     value={inputValue}
