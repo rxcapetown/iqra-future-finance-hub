@@ -9,6 +9,7 @@ import { BenefitTiles } from '@/components/BenefitTiles';
 import { ContactForm } from '@/components/ContactForm';
 import { Toaster } from '@/components/ui/toaster';
 import { Globe, Zap, Shield, TrendingUp, ArrowRight, Code, MapPin } from 'lucide-react';
+import { ChatWidget } from '@/components/ChatWidget';
 
 const Index = () => {
   return (
@@ -355,6 +356,7 @@ const Index = () => {
       </footer>
       
       <Toaster />
+      <ChatWidget />
     </div>
   );
 };
