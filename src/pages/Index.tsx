@@ -37,9 +37,9 @@ const Index = () => {
               </Badge>
               
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight bg-gradient-to-r from-slate-900 via-blue-900 to-purple-900 dark:from-white dark:via-blue-100 dark:to-purple-100 bg-clip-text text-transparent">
-                The Legal & Financial 
-                <span className="block">Operating System</span>
-                <span className="block text-blue-600 dark:text-blue-400">for Emerging Markets</span>
+                Contract Management 
+                <span className="block">and Risk Analysis</span>
+                <span className="block text-blue-600 dark:text-blue-400">that runs 24/7 for you</span>
               </h1>
               
               <p className="text-xl text-slate-600 dark:text-slate-300 leading-relaxed max-w-2xl">
