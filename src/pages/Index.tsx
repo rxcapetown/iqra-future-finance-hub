@@ -8,6 +8,7 @@ import { SolutionSection } from '@/components/sections/SolutionSection';
 import { HowItWorksSection } from '@/components/sections/HowItWorksSection';
 import { WhoItsForSection } from '@/components/sections/WhoItsForSection';
 import { SocialProofSection } from '@/components/sections/SocialProofSection';
+import { BookDemoSection } from '@/components/sections/BookDemoSection';
 import { CTASection } from '@/components/sections/CTASection';
 import { Footer } from '@/components/sections/Footer';
 
@@ -21,6 +22,7 @@ const Index = () => {
       <HowItWorksSection />
       <WhoItsForSection />
       <SocialProofSection />
+      <BookDemoSection />
       <CTASection />
       <Footer />
       
