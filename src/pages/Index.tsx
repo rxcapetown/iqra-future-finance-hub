@@ -1,6 +1,5 @@
 
 import { Toaster } from '@/components/ui/toaster';
-import ChatWidget from '@/components/ChatWidget';
 import { PromoPopup } from '@/components/PromoPopup';
 import { Header } from '@/components/sections/Header';
 import { HeroSection } from '@/components/sections/HeroSection';
@@ -27,7 +26,6 @@ const Index = () => {
       
       <PromoPopup />
       <Toaster />
-      <ChatWidget />
     </div>
   );
 };
