@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Dialog, DialogContent, DialogHeader, DialogTitle } from '@/components/ui/dialog';
 import { WaitlistForm } from '@/components/WaitlistForm';
-import { X, Timer } from 'lucide-react';
-import { Button } from '@/components/ui/button';
+import { Timer } from 'lucide-react';
 
 export function PromoPopup() {
   const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +53,7 @@ export function PromoPopup() {
   if (isExpired) return null;
 
   return (
-    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+    <Dialog open={isOpen} onOpenChange={handleClose}>
       <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-primary to-secondary border-0 text-primary-foreground">
         <DialogHeader className="text-center space-y-2">
           <div className="mx-auto w-12 h-12 bg-primary-foreground/20 rounded-full flex items-center justify-center mb-2">
@@ -80,15 +79,6 @@ export function PromoPopup() {
         <div className="mt-4">
           <WaitlistForm variant="light" />
         </div>
-
-        <Button
-          variant="ghost"
-          size="sm"
-          onClick={handleClose}
-          className="absolute top-4 right-4 text-primary-foreground/60 hover:text-primary-foreground hover:bg-primary-foreground/10"
-        >
-          <X className="w-4 h-4" />
-        </Button>
 
         <p className="text-xs text-center text-primary-foreground/70 mt-4">
           * This offer is only valid until August 15th, 2025. No payment required.
