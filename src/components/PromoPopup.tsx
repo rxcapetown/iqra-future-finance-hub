@@ -65,7 +65,7 @@ export function PromoPopup() {
           </DialogTitle>
           <div className="bg-primary-foreground/20 rounded-lg p-3 backdrop-blur-sm">
             <p className="text-lg font-semibold text-primary-foreground">
-              Get 1 Year FREE
+              Get 3 Months FREE
             </p>
             <p className="text-sm text-primary-foreground/80">
               Only for early supporters who sign up before August 15th, 2025
