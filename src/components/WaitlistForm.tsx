@@ -5,6 +5,7 @@ import { Input } from '@/components/ui/input';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { ArrowRight, CheckCircle } from 'lucide-react';
 import { useToast } from '@/hooks/use-toast';
+import { supabase } from '@/integrations/supabase/client';
 
 interface WaitlistFormProps {
   variant?: 'default' | 'light';
@@ -28,18 +29,43 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
     e.preventDefault();
     setIsLoading(true);
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    console.log('Waitlist submission:', formData);
-    
-    setIsSubmitted(true);
-    setIsLoading(false);
-    
-    toast({
-      title: "Welcome to the Iqra Beta Waitlist!",
-      description: "We'll be in touch soon with early access details.",
-    });
+    try {
+      const { error } = await supabase
+        .from('waitlist')
+        .insert({
+          name: formData.name,
+          email: formData.email,
+          company: formData.company || null,
+          region: formData.region || null,
+        });
+
+      if (error) {
+        if (error.code === '23505') {
+          toast({
+            title: "Already on the waitlist!",
+            description: "This email is already registered for early access.",
+            variant: "destructive",
+          });
+        } else {
+          throw error;
+        }
+      } else {
+        setIsSubmitted(true);
+        toast({
+          title: "Welcome to the ChainSight Beta Waitlist!",
+          description: "We'll be in touch soon with early access details.",
+        });
+      }
+    } catch (error) {
+      console.error('Error joining waitlist:', error);
+      toast({
+        title: "Something went wrong",
+        description: "Please try again later.",
+        variant: "destructive",
+      });
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   const handleInputChange = (field: string, value: string) => {
