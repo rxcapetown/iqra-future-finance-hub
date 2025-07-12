@@ -104,7 +104,7 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
           You're on the list!
         </h3>
         <p className={`text-sm ${variant === 'light' ? 'text-white/80' : 'text-slate-600 dark:text-slate-300'}`}>
-          We'll notify you when Iqra Beta is ready for early access.
+          We'll notify you when ChainSight is ready for early access.
         </p>
       </div>
     );
@@ -177,7 +177,7 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
       </Button>
       
       <p className={`text-xs text-center ${variant === 'light' ? 'text-white/60' : 'text-slate-500 dark:text-slate-400'}`}>
-        By joining, you agree to receive updates about Iqra Beta. Unsubscribe anytime.
+        By joining, you agree to receive updates about ChainSight. Unsubscribe anytime.
       </p>
     </form>
   );
