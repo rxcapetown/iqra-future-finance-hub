@@ -40,7 +40,7 @@ export function Footer() {
         
         <div className="border-t border-slate-200 dark:border-slate-700 mt-8 pt-8 text-center">
           <p className="text-slate-600 dark:text-slate-400 text-sm">
-            © 2024 ChainSight. AI-powered risk intelligence for global businesses.
+            © 2025 ChainSight. AI-powered risk intelligence for global businesses.
           </p>
         </div>
       </div>
