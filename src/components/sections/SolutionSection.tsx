@@ -4,7 +4,7 @@ import { FileText, TrendingUp, AlertTriangle, Globe } from 'lucide-react';
 
 export function SolutionSection() {
   return (
-    <section className="py-24 px-6 bg-white dark:bg-slate-800">
+    <section id="solution" className="py-24 px-6 bg-white dark:bg-slate-800">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-slate-900 dark:text-white mb-4">

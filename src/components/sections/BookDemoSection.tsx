@@ -2,7 +2,7 @@ import { BookDemoForm } from '@/components/BookDemoForm';
 
 export function BookDemoSection() {
   return (
-    <section className="py-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-slate-700">
+    <section id="book-demo" className="py-16 px-6 bg-gradient-to-br from-slate-50 to-blue-50 dark:from-slate-800 dark:to-slate-700">
       <div className="max-w-4xl mx-auto text-center">
         <div className="mb-8">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">

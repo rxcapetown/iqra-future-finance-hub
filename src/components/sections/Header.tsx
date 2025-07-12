@@ -1,8 +1,19 @@
 
 import { ThemeToggle } from '@/components/ThemeToggle';
+import { Button } from '@/components/ui/button';
 import { Eye } from 'lucide-react';
 
 export function Header() {
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }
+  };
+
   return (
     <header className="relative z-10 flex justify-between items-center p-6 max-w-7xl mx-auto">
       <div className="flex items-center space-x-3">
@@ -13,7 +24,49 @@ export function Header() {
           ChainSight
         </span>
       </div>
-      <ThemeToggle />
+      
+      <nav className="hidden md:flex items-center space-x-6">
+        <Button
+          variant="ghost"
+          onClick={() => scrollToSection('case-studies')}
+          className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          Case Studies
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => scrollToSection('how-it-works')}
+          className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          How It Works
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => scrollToSection('problem')}
+          className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          The Problem
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => scrollToSection('solution')}
+          className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          Our Solution
+        </Button>
+        <Button
+          variant="ghost"
+          onClick={() => scrollToSection('book-demo')}
+          className="text-slate-600 dark:text-slate-300 hover:text-blue-600 dark:hover:text-blue-400"
+        >
+          Book Demo
+        </Button>
+        <ThemeToggle />
+      </nav>
+
+      <div className="md:hidden">
+        <ThemeToggle />
+      </div>
     </header>
   );
 }

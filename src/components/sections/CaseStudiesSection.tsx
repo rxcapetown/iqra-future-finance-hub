@@ -1,6 +1,6 @@
 export function CaseStudiesSection() {
   return (
-    <section className="py-16 px-6 bg-slate-50 dark:bg-slate-800">
+    <section id="case-studies" className="py-16 px-6 bg-slate-50 dark:bg-slate-800">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-4">
