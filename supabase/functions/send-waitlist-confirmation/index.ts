@@ -44,6 +44,26 @@ const handler = async (req: Request): Promise<Response> => {
             <p style="color: #64748b; line-height: 1.6; margin-bottom: 20px;">
               Thank you for joining the ChainSight Beta waitlist! We're excited to have you on board as an early supporter.
             </p>
+
+            <div style="background: #f8fafc; border-left: 4px solid #3b82f6; padding: 20px; margin: 25px 0; border-radius: 0 8px 8px 0;">
+              <h3 style="color: #1e293b; margin-top: 0; font-size: 18px; display: flex; align-items: center;">
+                💼 A Personal Note from Our CEO
+              </h3>
+              <p style="color: #64748b; line-height: 1.6; font-style: italic; margin-bottom: 15px;">
+                "At ChainSight, we believe that powerful risk analytics and intelligent contract parsing shouldn't be exclusive to Fortune 500 companies. 
+                Our mission is to democratize AI-powered risk intelligence, making it accessible and cost-effective for businesses of all sizes.
+              </p>
+              <p style="color: #64748b; line-height: 1.6; font-style: italic; margin-bottom: 15px;">
+                Whether you're a growing startup navigating your first international contracts or an established enterprise looking to optimize your risk management, 
+                ChainSight is designed to be your intelligent partner in understanding and mitigating risks before they impact your bottom line.
+              </p>
+              <p style="color: #64748b; line-height: 1.6; font-style: italic; margin-bottom: 0;">
+                Thank you for believing in our vision. Together, we're building the future of intelligent risk management."
+              </p>
+              <p style="color: #1e293b; font-weight: bold; margin: 15px 0 0 0; text-align: right;">
+                — Mashruf Habib, CEO & Founder
+              </p>
+            </div>
             
             <div style="background: #f1f5f9; padding: 20px; border-radius: 8px; margin: 20px 0;">
               <h3 style="color: #1e293b; margin-top: 0; font-size: 18px;">What's Next?</h3>
@@ -51,6 +71,7 @@ const handler = async (req: Request): Promise<Response> => {
                 <li>You'll be among the first to access ChainSight Beta</li>
                 <li>We'll notify you as soon as early access is available</li>
                 <li>Get ready to transform your risk management with AI</li>
+                <li>Experience contract parsing that understands context, not just keywords</li>
               </ul>
             </div>
             
