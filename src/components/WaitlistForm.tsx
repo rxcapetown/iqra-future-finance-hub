@@ -30,6 +30,7 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
     setIsLoading(true);
     
     try {
+      // Save to database
       const { error } = await supabase
         .from('waitlist')
         .insert({
@@ -46,16 +47,38 @@ export function WaitlistForm({ variant = 'default' }: WaitlistFormProps) {
             description: "This email is already registered for early access.",
             variant: "destructive",
           });
+          return;
         } else {
           throw error;
         }
-      } else {
-        setIsSubmitted(true);
-        toast({
-          title: "Welcome to the ChainSight Beta Waitlist!",
-          description: "We'll be in touch soon with early access details.",
-        });
       }
+
+      // Send confirmation email
+      try {
+        const { error: emailError } = await supabase.functions.invoke('send-waitlist-confirmation', {
+          body: {
+            name: formData.name,
+            email: formData.email,
+            company: formData.company,
+            region: formData.region,
+          },
+        });
+
+        if (emailError) {
+          console.error('Email sending failed:', emailError);
+          // Don't block the success flow if email fails
+        }
+      } catch (emailError) {
+        console.error('Email sending error:', emailError);
+        // Don't block the success flow if email fails
+      }
+
+      setIsSubmitted(true);
+      toast({
+        title: "Welcome to the ChainSight Beta Waitlist!",
+        description: "Check your email for confirmation details.",
+      });
+
     } catch (error) {
       console.error('Error joining waitlist:', error);
       toast({
