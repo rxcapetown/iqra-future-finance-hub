@@ -22,7 +22,7 @@ export function PromoPopup() {
   useEffect(() => {
     // Calculate time left until August 15th, 2025
     const calculateTimeLeft = () => {
-      const deadline = new Date('2025-08-15T23:59:59');
+      const deadline = new Date('2025-10-15T23:59:59');
       const now = new Date();
       const difference = deadline.getTime() - now.getTime();
 
@@ -46,7 +46,7 @@ export function PromoPopup() {
     localStorage.setItem('promo-popup-shown', 'true');
   };
 
-  const deadline = new Date('2025-08-15T23:59:59');
+  const deadline = new Date('2025-10-15T23:59:59');
   const now = new Date();
   const isExpired = now > deadline;
 
@@ -67,7 +67,7 @@ export function PromoPopup() {
               Get 3 Months FREE
             </p>
             <p className="text-sm text-primary-foreground/80">
-              Exclusively for early supporters who sign up before August 15th, 2025
+              Exclusively for early supporters who sign up before October 15th, 2025
             </p>
           </div>
           <div className="flex items-center justify-center gap-2 text-sm text-primary-foreground/90">
@@ -81,7 +81,7 @@ export function PromoPopup() {
         </div>
 
         <p className="text-xs text-center text-primary-foreground/70 mt-4">
-          * This offer is only valid until August 15th, 2025. No payment required.
+          * This offer is only valid until October 15th, 2025. No payment required.
         </p>
       </DialogContent>
     </Dialog>
