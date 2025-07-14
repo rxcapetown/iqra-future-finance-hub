@@ -11,7 +11,7 @@ export function ProblemSection() {
             The Hidden Cost of Risk Blindspots
           </h2>
           <p className="text-xl text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            Global businesses lose billions annually from supply chain fraud, contract red flags, and vendor due diligence blind spots
+            Global businesses lose billions annually from supply chain fraud, contract red flags, and vendor due diligence blindspots
           </p>
         </div>
         

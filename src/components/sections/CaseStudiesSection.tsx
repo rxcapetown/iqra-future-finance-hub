@@ -7,7 +7,7 @@ export function CaseStudiesSection() {
             Real-World Impact
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-300 max-w-3xl mx-auto">
-            See how ChainSight could have prevented major supply chain disasters and protected businesses from catastrophic losses.
+            See how ChainSight would have prevented major supply chain disasters and protected businesses from catastrophic losses.
           </p>
         </div>
 
@@ -100,7 +100,7 @@ export function CaseStudiesSection() {
                   
                   <h5 className="font-medium text-blue-900 dark:text-blue-100 mb-2">📱 Instant Alerts</h5>
                   <p className="text-sm text-slate-600 dark:text-slate-400">
-                    Factory owner receives WhatsApp alert in Bengali: "⚠️ URGENT: Your client BHS is facing financial distress. Consider halting production or requiring payment guarantees."
+                    Factory owner receives WhatsApp alert in Bengali: "⚠️ URGENT: Your client BHS is experiencing financial distress. Consider halting production or requiring payment guarantees."
                   </p>
                 </div>
                 

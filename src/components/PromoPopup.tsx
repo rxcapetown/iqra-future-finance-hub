@@ -67,7 +67,7 @@ export function PromoPopup() {
               Get 3 Months FREE
             </p>
             <p className="text-sm text-primary-foreground/80">
-              Only for early supporters who sign up before August 15th, 2025
+              Exclusively for early supporters who sign up before August 15th, 2025
             </p>
           </div>
           <div className="flex items-center justify-center gap-2 text-sm text-primary-foreground/90">
