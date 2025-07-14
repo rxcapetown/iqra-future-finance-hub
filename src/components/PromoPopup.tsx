@@ -54,33 +54,33 @@ export function PromoPopup() {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100">
-        <DialogHeader className="text-center space-y-2">
-          <div className="mx-auto w-12 h-12 bg-slate-200 dark:bg-slate-700 rounded-full flex items-center justify-center mb-2">
-            <Timer className="w-6 h-6 text-slate-600 dark:text-slate-300" />
+      <DialogContent className="max-w-lg mx-auto bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 text-gray-900 dark:text-gray-100 shadow-2xl backdrop-blur-sm z-[60]">
+        <DialogHeader className="text-center space-y-3">
+          <div className="mx-auto w-16 h-16 bg-blue-100 dark:bg-blue-900/30 rounded-full flex items-center justify-center mb-2">
+            <Timer className="w-8 h-8 text-blue-600 dark:text-blue-400" />
           </div>
-          <DialogTitle className="text-2xl font-bold text-slate-900 dark:text-slate-100">
+          <DialogTitle className="text-2xl font-bold text-gray-900 dark:text-gray-100">
             🎉 Limited Time Offer!
           </DialogTitle>
-          <div className="bg-slate-200/50 dark:bg-slate-700/50 rounded-lg p-3 backdrop-blur-sm">
-            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-900/20 dark:to-indigo-900/20 rounded-lg p-4 border border-blue-200 dark:border-blue-800">
+            <p className="text-xl font-semibold text-gray-900 dark:text-gray-100 mb-1">
               Get 3 Months FREE
             </p>
-            <p className="text-sm text-slate-600 dark:text-slate-400">
+            <p className="text-sm text-gray-600 dark:text-gray-400">
               Exclusively for early supporters who sign up before August 15th, 2025
             </p>
           </div>
-          <div className="flex items-center justify-center gap-2 text-sm text-slate-600 dark:text-slate-400">
+          <div className="flex items-center justify-center gap-2 text-sm text-gray-600 dark:text-gray-400 bg-gray-50 dark:bg-gray-800/50 rounded-full px-4 py-2">
             <Timer className="w-4 h-4" />
-            <span>{timeLeft}</span>
+            <span className="font-medium">{timeLeft}</span>
           </div>
         </DialogHeader>
 
-        <div className="mt-4">
+        <div className="mt-6 px-2">
           <WaitlistForm variant="light" />
         </div>
 
-        <p className="text-xs text-center text-slate-500 dark:text-slate-400 mt-4">
+        <p className="text-xs text-center text-gray-500 dark:text-gray-400 mt-4 bg-gray-50 dark:bg-gray-800/30 rounded-lg p-2">
           * This offer is only valid until August 15th, 2025. No payment required.
         </p>
       </DialogContent>
