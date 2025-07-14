@@ -54,23 +54,23 @@ export function PromoPopup() {
 
   return (
     <Dialog open={isOpen} onOpenChange={handleClose}>
-      <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-primary to-secondary border-0 text-primary-foreground">
+      <DialogContent className="max-w-md mx-auto bg-gradient-to-br from-slate-50 to-slate-100 dark:from-slate-800 dark:to-slate-900 border border-slate-200 dark:border-slate-700 text-slate-900 dark:text-slate-100">
         <DialogHeader className="text-center space-y-2">
-          <div className="mx-auto w-12 h-12 bg-primary-foreground/20 rounded-full flex items-center justify-center mb-2">
-            <Timer className="w-6 h-6 text-primary-foreground" />
+          <div className="mx-auto w-12 h-12 bg-slate-200 dark:bg-slate-700 rounded-full flex items-center justify-center mb-2">
+            <Timer className="w-6 h-6 text-slate-600 dark:text-slate-300" />
           </div>
-          <DialogTitle className="text-2xl font-bold text-primary-foreground">
+          <DialogTitle className="text-2xl font-bold text-slate-900 dark:text-slate-100">
             🎉 Limited Time Offer!
           </DialogTitle>
-          <div className="bg-primary-foreground/20 rounded-lg p-3 backdrop-blur-sm">
-            <p className="text-lg font-semibold text-primary-foreground">
+          <div className="bg-slate-200/50 dark:bg-slate-700/50 rounded-lg p-3 backdrop-blur-sm">
+            <p className="text-lg font-semibold text-slate-900 dark:text-slate-100">
               Get 3 Months FREE
             </p>
-            <p className="text-sm text-primary-foreground/80">
+            <p className="text-sm text-slate-600 dark:text-slate-400">
               Exclusively for early supporters who sign up before August 15th, 2025
             </p>
           </div>
-          <div className="flex items-center justify-center gap-2 text-sm text-primary-foreground/90">
+          <div className="flex items-center justify-center gap-2 text-sm text-slate-600 dark:text-slate-400">
             <Timer className="w-4 h-4" />
             <span>{timeLeft}</span>
           </div>
@@ -80,7 +80,7 @@ export function PromoPopup() {
           <WaitlistForm variant="light" />
         </div>
 
-        <p className="text-xs text-center text-primary-foreground/70 mt-4">
+        <p className="text-xs text-center text-slate-500 dark:text-slate-400 mt-4">
           * This offer is only valid until August 15th, 2025. No payment required.
         </p>
       </DialogContent>
