@@ -1,6 +1,6 @@
 
 import { Toaster } from '@/components/ui/toaster';
-import { PromoPopup } from '@/components/PromoPopup';
+
 
 import { Header } from '@/components/sections/Header';
 import { HeroSection } from '@/components/sections/HeroSection';
@@ -25,7 +25,7 @@ const Index = () => {
       <CTASection />
       <Footer />
       
-      <PromoPopup />
+      
       <Toaster />
     </div>
   );
